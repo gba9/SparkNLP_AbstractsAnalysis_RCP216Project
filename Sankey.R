@@ -1,7 +1,7 @@
 library(dplyr)
 library(tidyr)
 library(networkD3)
-setwd("~/Dropbox/CNAM/RCP216/RCP216_PROJECT/2-AbstractsCollection/Abstract_analysis")
+
 data=read.csv("merged_results_renamed.csv", sep=",", header=TRUE)
 
 
@@ -34,8 +34,7 @@ names <- data.frame(
          as.character(links$target)) %>% unique()
 )
 
-# With networkD3, connection must be provided using id, not using real name like in the links dataframe.. So we need to reformat it.
-links$IDsource <- match(links$source, names$name)-1 
+# With networkD3, connection must be provided using id, not using real name like in the links dataframe...
 links$IDtarget <- match(links$target, names$name)-1
 
 

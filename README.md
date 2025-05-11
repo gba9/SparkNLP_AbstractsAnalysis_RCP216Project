@@ -13,6 +13,10 @@ The steps taken to collect the articles are summarized in Figure 1. In total, a 
 
 <img width="1080" alt="image" src="https://github.com/user-attachments/assets/aaf7e367-b5f6-4b41-86de-d00752659f28" />
 
+## Objectives 
+The aim of this project is to identify the underlying topics in this corpus of abstracts of scientific articles, highlighting recurring concepts and their evolution over time.
+The processing of abstracts collected started with the encoding of the abstracts in a vector space and then the grouping of the articles using automatic classification methods (unsupervised learning or clustering). Finally, a qualitative analysis of the groupings obtained enabled us to identify topics a posteriori, and compare the results obtained between encoding and classification techniques.
+
 ## Contents
 - unique_abstracts_dates.csv : data source file containing the +2000 abstracts
 - Rapport : report of the project in french for the RCP216 course: "Big data mining and visualisation"
